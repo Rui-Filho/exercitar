@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando condições aninhadas</title>
+</head>
+<body>
+
+    <h1>DIGITE SUA NOTA PARA SABER COMO FOI:</h1>
+
+    <h2>Digite sua nota de 1 a 10:</h2>
+
+    <input type="number" id="txt1">
+    <input type="button" value="Verificar" onclick="ver()">
+    <div id="des"></div>
+
+
+    <script>
+
+        function ver(){
+            var nota = Number(document.getElementById('txt1').value)
+            var des = document.getElementById('des')
+            if(nota >= 0 && nota <=4){des.innerHTML= 'Infelizmente sua nota ficou abaixo da média e está REPROVADO(A)'} 
+            else if(nota >= 5 && nota < 7){des.innerHTML='Sua nota ficouu um pouco abaixo da média. Agende sua prova de RECUPERAÇÃO'}
+            else if(nota == 10){des.innerHTML= 'PARABÉNS! Você acertou todas as questões ficou com a NOTA MÁXIMA 10! ESTÁ APROVADO(A)'}
+            else{des.innerHTML= 'Parabéns! Você está aprovado'}
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTANDO SWITCH</title>
+</head>
+<body>
+
+    <H1>AVALIE NOSSO ATENDIMENTO</H1>
+
+    <H2>Avalie o nosso atendimento considerando uma nota entre 1 a 5, considerando 1 para pouco satisfeito e 5 para muito satisfeito.</H2>
+    <input type="number" id="t1">
+    <input type="button" value="Avaliar" onclick="avaliar()"  >
+    <div id="ava"></div>
+
+
+    <script>
+        function avaliar(){
+            var nota = Number(document.getElementById('t1').value)
+            var res = document.getElementById('ava')
+            res.innerHTML= `Sua avaliação foi : ${nota}. `  
+            switch(nota){
+                case 1:
+                    res.innerHTML += 'Sentimos por esta experiência ter sido ruim. Explique nos comentários para solucionarmos estes problemas'
+                    break
+
+                case 2: 
+                res.innerHTML += 'Nos conte um pouco mais sobre o atendimento para buscarmos melhoras.'
+                break
+
+                case 3:
+                    res.innerHTML += 'Agradecemos sua avaliação. Nos ajude a melhorar escrevendo sobre a experiência'
+                    break
+
+                case 4:
+                    res.innerHTML += ' Agradecemos sua avaliação. Caso queiura, dexe sua sugestão abaixo'  
+                    break
+
+                case 5:
+                    res.innerHTML += ' Que ótimo ter gostado de nosso atendimento. Volte sempre.'
+                    break
+
+                    
+                default:
+                    res.innerHTML += 'Avaliação inválida - Tente novamente'    
+
+            }
+              }
+
+
+    </script>
+
+    
+    
+</body>
+</html>

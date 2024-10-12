@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCITANDO PSEUDO CLASSES - HOOVER-VISITED-ACTIVE</title>
+    <style>
+        body{
+            color: blue;
+            font: normal 12pt arial;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+
+        }
+        
+        a:visited{color: blueviolet;}
+        a:hover{
+            color: yellowgreen;
+            text-decoration: underline;
+        }
+        a:active{color: rgb(5, 83, 83);}
+        a::after{content: 'Link';
+    color: blue;}
+
+    </style>
+</head>
+<body>
+    
+    <H1>PSEUDO CLASSES</H1>
+    <H2>Acesse as plataformas digitais da Bloco: </H2>
+    <ol>
+        <a href="https://www.youtube.com/@blocorock"  target="_blank" rel="external">
+            <li>Youtube</li>
+        </a>
+        <a href="https://www.facebook.com/people/BLOCO/100071034903229/" target="_blank" rel="extenal">
+            <li>Facebook</li>
+        </a>
+        <a href="https://ge.globo.com/" target="_blank" id="external">
+            <li>Globo esporte</li>
+        </a>
+
+
+    </ol>
+
+</body>
+</html>

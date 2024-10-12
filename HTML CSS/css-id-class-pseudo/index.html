@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando id class pseudo clas </title>
+    <style>
+        body{
+            background-color: rgb(131, 131, 223);
+            font: normal 1em arial;
+        }
+
+        #principal{
+            background-color: black;
+            color: antiquewhite;
+        }
+        #principal:hover{
+            background-color: aqua;
+            color: blue;
+        }
+        .texto{
+            background-color: rgb(228, 140, 140);
+            color: aliceblue;
+        }
+        .texto:hover{
+            color: black;
+
+        }
+
+        div{
+            font: bolder 2em arial;
+            color: aliceblue;
+        }
+
+        div:hover{
+            color: blue;
+            background-color: blanchedalmond;
+        }
+
+        div > p {display: none;}   
+        div:hover > p {
+            display: block;
+            background-color: rgb(180, 157, 157);
+        }  
+
+        
+
+    </style>
+</head>
+<body>
+
+    <h1 id="principal">Trabalhando com seletores</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos amet tenetur blanditiis architecto rerum ea nisi repellat dolore minus, assumenda reprehenderit qui! Enim dolores quis eligendi soluta inventore. Sequi.
+
+        <h2 class="texto">Seletor ID</h2>
+
+        <h2 class="texto">Seletor class</h2>
+
+        <h2 class="texto">Pseudo classs</h2>
+
+        <div>Não entre aqui
+
+            <p>EU AVISEI PARA NÃO ENTRAR.VOCÊ SERÁ ELIMINADO</p>
+
+        </div>
+
+    
+    
+    
+</body>
+</html>
