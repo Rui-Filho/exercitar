@@ -1,5 +1,5 @@
-function MEDIA(n,n2,n3){
-    return n+n2+n3/3
-}
-
-console.log(MEDIA(702,977,222))
+function power(base, exponent) {
+    
+    return base * power(base, exponent - 1);
+    }
+    console.log(power(2, 3))

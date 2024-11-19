@@ -1,6 +1,6 @@
-res = 2
-for(c=1; c < 10; c++){
-    res = res*2
+res = 1
+for(c=0; c < 2; c++){
+    res = res*4
 }
 
 console.log(res)
