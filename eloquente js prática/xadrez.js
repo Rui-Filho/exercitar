@@ -1,7 +1,11 @@
-var obj = {
-  name: "Alice",
-  age: 25,
-  hobbies: ["reading", "coding"]
-};
+var journal = [];
+function addEntry(events, didITurnIntoASquirrel) {
+journal.push({
+events: events,
+squirrel: didITurnIntoASquirrel
+});
+}
 
-console.log(obj.hobbies)
+addEntry(["work", "touched tree", "pizza", "running",
+  "television"], false);
+  console.log(journal)
